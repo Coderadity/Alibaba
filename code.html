@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+   <style>
+        /* Reset some default styles */
+        * {
+            margin: 0%;
+    font-family: Arial;
+    border: border-box;
+
+
+
+        }
+
+        /* Global styles */
+        body {
+
+            background-color:white;
+
+
+color: black;
+
+
+            
+.navbar{
+    height: 70px;
+    background-color: #0f1111;
+    color:white;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+
+
+}
+
+.nav-logo{
+    height: 70px;
+    width: 160px;
+}
+
+.logo{
+    background-image: url(aali.png);
+    background-size: cover;
+    height: 70px;
+    width: 100%;
+}
+
+
+
+.border:hover{
+    border: 2px solid white;
+}
+
+.add-first{
+    color: #cccccc;
+    font-size: 1rem;
+}
+
+.add-sec{
+    font-size: 1rem;
+    margin-left: 3px;
+
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+   background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+
+}
+
+.search-input{
+    width:100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size:1.2rem;
+    background-color: rgb(255,174, 0);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+color: #0f1111;
+}
+
+span{
+    font-size: 0.7rem;
+
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+
+}
+
+.nav-cart i{
+    font-size: 30px;
+
+
+}
+
+
+.product{
+
+}
+
+
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.panel{
+    height:40px;
+    background-color: #222f3d;
+    display: flex;
+    color:white;
+    align-items: center;
+    justify-content: space-evenly;
+  
+
+}
+
+
+
+
+
+.panel-all{
+width:10%
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.panel-ops p{
+    display: inline;
+margin-left: 10px;
+
+}
+
+.panel-ops{
+    width:50%;
+    font-size: 0.85rem;
+
+}
+
+
+
+
+
+
+
+.panel-deals{
+
+    background-image: url(playground.jpg);
+    height: 35px;
+    width: 400px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+            font-family: Arial;
+            
+            
+            line-height: 1.6;
+            /* background-color: #f4f4f4; */
+            
+        }
+
+        /* Header styles */
+        /* header {
+           
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        } */
+
+        /* Navigation styles */
+        nav {
+            background: #853838;
+            color: #9f9f9f;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Product grid styles */
+       
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+            align-items: center;
+            text-decoration: none;
+        }
+
+
+
+        .producth {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            align-items: center;
+            
+        }
+
+        .product h3 {
+            margin-top: 10px;
+        }
+
+        .product p {
+            margin: 10px 0;
+        }
+
+        /* Footer styles */
+        /* footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+ */
+
+ 
+footer{
+    margin-top: 15px;
+}
+
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+
+}
+
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+display: flex;
+justify-content: space-evenly;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color:#dddddd;
+}
+
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 50px;
+    font-size: 0.7rem;
+    text-align: center;
+    align-items: center;
+}
+
+.pages{
+    font-size: 0.7rem;
+text-align: center;
+padding-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        
+
+
+
+
+
+
+        <header>
+            <div class="navbar">
+                <div class="nav-logo border">
+            <div class="logo">
+            
+            </div>
+                </div>
+                <div class="nav-address border">
+                    <p class="add-first">Diliver to</p>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="add-sec">China</p>
+            
+                    </div>
+                </div>
+            
+               
+            
+              
+            
+                <div class="nav-search">
+                    <select class="search-select">
+                        <option>All</option>
+                        <option>All Categories</option>
+                        <option>Alexa skills</option>
+                        <option>Alibaba Devices</option>
+                        <option>Alibaba Fresh</option>
+                        <option>Alibaba Pharmacy</option>
+                        <option>Appliances</option>
+                        <option>Apps and games</option>
+                        <option>Audiable Audiobooks</option>
+                        <option>Baby</option>
+                        <option>car and moterbikes</option>
+                        <option>Apps and Games</option>
+                        <option>Deals</option>
+                        <option>Furniture</option>
+                        <option>All</option>
+                        <option>All Categories</option>
+                        <option>Alexa skills</option>
+                        <option>Alibaba Devices</option>
+                        <option>Alibaba Fresh</option>
+                        <option>Alibaba Pharmacy</option>
+                        <option>Appliances</option>
+                        <option>Apps and games</option>
+                        <option>Audiable Audiobooks</option>
+                        <option>Baby</option>
+                        <option>car and moterbikes</option>
+                        <option>Apps and Games</option>
+                        <option>Deals</option>
+                        <option>Furniture</option>
+            
+            </select>                
+            
+            <input placeholder="Search Ali baba" class="search-input">
+            
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            
+                    </div>
+                
+                      <div class="nav-signin border">
+            <p><span>Hello, sign-in</span></p>
+            <p class="nav-second"><a href ="sign-in.html" style="color: aliceblue;">Accounts and lists</p></a>
+                      </div>
+            
+            
+            <div class="product border">
+            <a href="code.html" style="color: aliceblue;">Products</a>
+            
+            </div>
+            
+            
+            
+                      
+                      <div class="nav-ret border">
+                        <p>Returns <br/>
+                            <span> <b>& Orders</span></b></p>
+                      </div>
+            
+                      <div class="nav-return border">
+                        <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+                      </div>
+                      </div>
+            
+                      <div class="panel">
+                        <div class="panel-all border">
+                            <i class="fa-solid fa-bars"></i>
+                            ALL
+            
+                    
+                          
+            
+            
+            
+            
+                   
+                            
+            
+            
+            
+            
+            
+            
+            
+                        </div>
+                        <div class="panel-ops border">
+                            <p>Today's Deals</p>
+                            <p>Customer Service</p>
+                            <p>Registry</p>
+                            <p>Gift Cards</p>
+                            <p>Sell</p>
+            
+                        </div>
+                        <div class="panel-deals">
+                         
+            
+                        </div>
+                      </div>
+                      </div>
+                 
+                </header>
+
+<br />
+
+
+<h1><b>    Products and Today's Best Deals</b></h1>
+
+<br />
+
+
+
+
+
+
+    
+
+    
+
+    <div class="products">
+        <div class="product">
+            <img src="mobile1.jpg" alt="Product 1">
+            <h3>POCO C51 (Royal Blue, 6GB RAM, 128GB Storage)
+                3.9 out of 5 stars 1,387
+                5K+ bought in past month</h3>
+            <p>$199.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="mobile2.jpg" alt="realme narzo 60X 5G (Stellar Green, 4GB, 128GB Storage) Up to 2TB External Memory | 50 MP AI Primary Camera | Segments only 33W">
+            <h3>realme narzo 60X 5G (Stellar Green, 4GB, 128GB Storage) Up to 2TB External Memory | 50 MP AI Primary Camera | Segments only 33W</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+
+        <div class="product">
+            <img src="oneplus.jpg" alt="Product 1">
+            <h3>OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="mobile3.jpg" alt="Product 2">
+            <h3>realme narzo 60 5G (Cosmic Black,8GB+128GB) | 90Hz Super AMOLED Display | Ultra Sharp 64 MP Camera | with 33W SUPERVOOC</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+        <div class="product">
+            <img src="mobile4.jpg" alt="Product 1">
+            <h3>realme narzo 60 5G (Mars Orange,8GB+128GB) 90Hz Super AMOLED Display | Ultra Premium Vegan Leather Design | with 33W SUPERVOO</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="product">
+            <img src="fashion.png" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+
+
+        <div class="product">
+            <img src="fashion1.png" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="fashion2.png" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+
+
+        <div class="product">
+            <img src="fashion3.png" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="fashion4.png" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="product">
+            <img src="head.jpg" alt="Product 1">
+<br />
+<br />
+<br />
+<br />
+<br />
+
+            <h3>Logitech G435 Lightspeed and Bluetooth Wireless Over Ear Gaming Headphones - Lightweight, with mics, 18h Battery, Compatible with Dolby Atmos, PC, PS4, PS5, Mobile - Blue</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="game1.jpg" alt="Product 2">
+
+            <h3>Ant Esports GM700 Lightweight Wireless RGB Gaming Mouse, Rechargeable Mouse with Honeycomb Shell, 11 Led Light Modes</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="product">
+            <img src="game2.jpg" alt="Product 1">
+            <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+            <h3>Ant Esports MK1400 Pro Backlit Membrane Wired Gaming Keyboard with Mixed Colour Lighting, White & Black Keycaps</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="game3.jpg" alt="Product 2">
+            <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+            <h3>Redgear Pro Wireless Gamepad with 2.4GHz Wireless Technology, Integrated Dual Intensity Motor, Illuminated Keys for PC</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="product">
+            <img src="game4.webp" alt="Product 1">
+            <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+            <h3>SJCAM SJ4000 WiFi 12MP Optical Full HD WiFi Sports Action Camera 170°Wide FOV 30M Waterproof DV Camcorder, Black</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="bag1.jpg" alt="Product 2">
+            <h3>
+                Safari Pentagon Hardside Medium Size Check-in Luggage Suitcase Trolley Bags for Travel Black Color 66cm
+    </h3>            
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="product">
+            <img src="bag.jpg" alt="Product 1">
+
+
+
+            <h3>Skybags Casual Backpack 28L, 2 Main Compartments, Bottle Pocket, Front Pocket, Padded Shoulder Strap</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="bag2.jpg" alt="Product 2">
+            
+            <h3>  Boldfit Shoe Bag for Travel & Storage Travel Organizer for Women & Men Travel Accessories Shoe Organizer Shoe Bags…</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="product">
+            <img src="bag4.jpg" alt="product">
+            
+            <h3>GLUN® Electronic Portable Digital LED Screen Luggage Weighing Scale, 50 kg/110 Lb For Multi-Purpose Use.</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="bag5.jpg" alt="Product 2">
+            <h3>
+                Chris & Kate Multi Print Boys and Girls School-Casual-college-Everyday Bag with free stationery Pouch and Rain/Dust Cover…</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="product" >
+            <img src="a.png" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="b.png" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+
+
+
+        <div class="product">
+            <img src="c.png" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="d.png" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+        <div class="product">
+            <img src="e.png" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Add more products here -->
+    
+
+    </div>
+    
+    <footer>
+
+        <div class="foot-panel1">
+            <a href="aditay.html" style="color: beige;">  Back to top</a>
+          </div>
+
+          <div class="foot-panel2">
+              <ul>
+                  <p>Get to know</p>
+                  <a>Carriers</a>
+                  <a>Blog</a>
+                  <a>Investor Relations</a>
+                  <a>Amazon Devices</a>
+                  <a>Amazon Science</a>
+                  
+
+
+
+                  
+              </ul>
+              <ul>
+                  <p>Connect with us</p>
+                  <a>Facebook</a>
+                  <a>Instagram</a>
+                  <a>Twitter</a>
+                  <a>Skype</a>
+                  <a>Threats</a>
+                  
+
+
+
+                  
+              </ul>
+              <ul>
+                  <p>Make Money with us</p>
+                  <a>Sell on Alibaba</a>
+                  <a>Sell Under Amazon Accelerator</a>
+                  <a>Protect and Build Your Brand</a>
+                  <a>Alibaba Global Seling</a>
+                  <a>Become an Affiliate</a>
+                  <a>Fulfillment by alibaba</a>
+                  <a>Advatise Your Products</a>
+                  <a>Alibaba Pay on Merchants</a>                    
+
+
+
+                  
+              </ul>
+              <ul>
+                  <p>Let us Help You</p>
+                  <a>COVID-19 and alibaba</a>
+                  <a>Your account</a>
+                  <a>Returns Center</a>
+                  <a>100% purchase Protection</a>
+                  <a>Alibaba app download</a>
+                  <a>Help</a>
+                  
+              </ul>
+
+          </div>
+
+
+
+          <div class="foot-panel4">
+              <div class="pages">
+                  <a>Conditions of Use</a>
+             <a>Privacy Notice</a>
+             <a>Your Add privacy choices</a>
+             
+            </div>
+
+            &copy; 2024 Ali Baba Online Shopping Website
+            </div>
+      </footer>
+
+
+      
+</body>
+</html>
